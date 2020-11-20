@@ -1,13 +1,10 @@
-.container {
-  padding: 0px 200px;
-}
-
 .hero {
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 87vh;
   .brand {
     display: flex;
     flex-direction: row;
@@ -26,9 +23,6 @@
     margin: 0;
     line-height: 1.15;
     font-size: 3.5rem;
-    @media screen and (max-width: 480px) {
-      font-size: 2.5rem;
-    }
   }
 
   .title,
@@ -39,56 +33,63 @@
   .description {
     line-height: 1.5;
     font-size: 1.5rem;
+  }
 
-    @media screen and (max-width: 480px) {
-      font-size: 1.3rem;
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    a {
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 2px;
+      font-weight: 500;
     }
-  }
-}
-
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-top: 10px;
-  a {
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 2px;
-    font-weight: 500;
-  }
-  i {
-    font-size: larger;
-  }
-  a.linkedin {
-    background-color: #0a66c2;
-    color: #ffffff;
-  }
-  a.github {
-    background-color: #24292e;
-    color: #ffffff;
-  }
-  a.twitter {
-    background-color: #1da1f2;
-    color: #ffffff;
-  }
-  a.medium {
-    background-color: #292929;
-    color: #ffffff;
+    i {
+      font-size: larger;
+    }
+    a.linkedin {
+      background-color: #0a66c2;
+      color: #ffffff;
+    }
+    a.github {
+      background-color: #24292e;
+      color: #ffffff;
+    }
+    a.twitter {
+      background-color: #1da1f2;
+      color: #ffffff;
+    }
+    a.medium {
+      background-color: #292929;
+      color: #ffffff;
+    }
   }
 
   @media screen and (max-width: 480px) {
-    a {
-      padding: 10px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      i {
-        font-size: x-large;
-      }
-      span {
-        display: none;
+    .brand {
+      display: none;
+    }
+    .title {
+      font-size: 2.5rem;
+    }
+    .description {
+      font-size: 1.3rem;
+    }
+    .social {
+      a {
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: x-large;
+        }
+        span {
+          display: none;
+        }
       }
     }
   }
@@ -109,9 +110,6 @@
   > div {
     max-width: 700px;
     margin: 20px auto;
-    @media screen and (min-width: 480px) {
-      // padding: 40px 180px;
-    }
   }
   h4,
   h5,
@@ -174,6 +172,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
     }
   }
 }
@@ -184,6 +188,8 @@
 
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -191,16 +197,6 @@
   width: 100%;
   height: 100px;
   border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
   display: flex;
   justify-content: center;
   align-items: center;

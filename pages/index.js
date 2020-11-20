@@ -99,21 +99,27 @@ export default function Home() {
             </div>
             <div className={styles.tech}>
               <h5>Technologies I work with 💻</h5>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                }}
+              >
                 <span style={{ color: '#ffffff', margin: 10 }}>
-                  <i class="fab fa-python"></i> Python
+                  <i className="fab fa-python"></i> Python
                 </span>
                 <span style={{ color: '#ffffff', margin: 10 }}>
-                  <i class="fab fa-java"></i> Java
+                  <i className="fab fa-java"></i> Java
                 </span>
                 <span style={{ color: '#ffffff', margin: 10 }}>
-                  <i class="fab fa-html5"></i> HTML & (S)CSS
+                  <i className="fab fa-js"></i> JavaScript
                 </span>
                 <span style={{ color: '#ffffff', margin: 10 }}>
-                  <i class="fab fa-js"></i> JavaScript
+                  <i className="fab fa-html5"></i> HTML & (S)CSS
                 </span>
                 <span style={{ color: '#ffffff', margin: 10 }}>
-                  <i class="fab fa-react"></i> React & React Native
+                  <i className="fab fa-react"></i> React (Native)
                 </span>
               </div>
             </div>
@@ -122,7 +128,22 @@ export default function Home() {
         <section></section>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <h3>Get in touch</h3>
+          <div>
+            <a href="mailto:frimpongi50@gmail.com">frimpongi50@gmail.com</a> |
+            <a href="tel:+233576621657"> +233576621657</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

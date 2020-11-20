@@ -4,6 +4,7 @@ import styles from '../styles/Navigation.module.scss';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const handleNav = () => setNavOpen(!navOpen);
   return (
     <div>
       <nav className={styles.nav}>
@@ -17,19 +18,38 @@ const Navbar = () => {
             />
             <h4>ISAAC GYAMFI</h4>
           </div>
-          <div>
-            <button>close</button>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <div onClick={handleNav}>
+              <i
+                style={{ color: '#ffffff', fontSize: 28 }}
+                className={navOpen ? 'fas fa-times' : 'fas fa-bars'}
+              ></i>
+            </div>
           </div>
         </div>
-        <ul>
-          <li>Meet me</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-        <div className={styles.btngroup}>
-          <button className={styles.primarybtn}>Study with me</button>
-          <button className={styles.secondarybtn}>Download resume</button>
+        <div
+          className={
+            navOpen
+              ? `${styles.navitems} ${styles.active}`
+              : `${styles.navitems}`
+          }
+        >
+          <ul>
+            <li>Meet me</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+          <div className={styles.btngroup}>
+            <button className={styles.primarybtn}>Study with me</button>
+            <button className={styles.secondarybtn}>Download resume</button>
+          </div>
         </div>
       </nav>
     </div>

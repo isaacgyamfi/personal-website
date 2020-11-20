@@ -19,94 +19,132 @@
       border: 1px solid rgb(51, 71, 75);
     }
   }
-  ul {
+  .navitems {
     display: flex;
-    padding: 0;
-    li {
-      list-style: none;
-      margin: 10px 5px;
-      padding: 5px;
-      border-bottom: 4px solid transparent;
-      font-size: large;
-      font-weight: 500;
-      &:hover {
-        border-bottom: 4px solid #025673;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 10px 5px;
+        padding: 5px;
+        border-bottom: 4px solid transparent;
+        font-size: large;
+        font-weight: 500;
+        &:hover {
+          border-bottom: 4px solid #025673;
+        }
+      }
+    }
+    div.btngroup {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        border-radius: 2px;
+        font-weight: bold;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          cursor: pointer;
+        }
+      }
+      button.primarybtn {
+        border: 2px solid #025673;
+        color: #025673;
+        background-color: #ffffff;
+      }
+      button.secondarybtn {
+        border: 2px solid #025673;
+        background-color: #025673;
+        color: #ffffff;
       }
     }
   }
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    position: relative;
     background-color: rgb(51, 71, 75);
     padding: 10px;
-    .logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-left: 10px;
-      img {
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      h4 {
-        font-weight: 300;
-        font-size: xx-large;
-        margin-left: 10px;
-        color: #ffffff;
-      }
-    }
-    ul {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      padding: 0;
-      li {
-        display: block;
-        width: 100%;
-        color: #ffffff;
-        margin: 0;
-        padding: 10px;
-        font-size: x-large;
-        &:hover {
-          background-color: #025673;
+    .header {
+      padding: 10px;
+      .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        h4 {
+          font-weight: 300;
+          font-size: xx-large;
+          // line-height: 0;
+          margin: 0 0 0 10px;
+          color: #ffffff;
         }
       }
     }
-    div.btngroup {
+    .navitems {
+      flex: 1;
+      background-color: rgb(51, 71, 75);
       display: flex;
       flex-direction: column;
+      padding: 10px;
+      left: -100%;
+      top: 70px;
+      height: 90vh;
+      transition: all 0.5s ease;
+      position: absolute;
+      opacity: 1;
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li {
+          display: block;
+          width: 100%;
+          color: #ffffff;
+          // margin: 5px;
+          padding: 10px;
+          font-size: x-large;
+          &:hover {
+            background-color: #025673;
+          }
+        }
+      }
+      div.btngroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-      button {
-        width: max-content;
+        button {
+          width: 100%;
+          margin: 5px;
+          font-size: large;
+        }
+        button.primarybtn {
+          border: 2px solid #ffffff;
+          color: #025673;
+          background-color: #ffffff;
+        }
       }
     }
-  }
-  div.btngroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    button {
-      padding: 10px 15px;
-      margin-right: 10px;
-      border-radius: 2px;
-      font-weight: bold;
-      border-radius: 5px;
-      &:hover {
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-        cursor: pointer;
-      }
-    }
-    button.primarybtn {
-      border: 2px solid #025673;
-      color: #025673;
-      background-color: #ffffff;
-    }
-    button.secondarybtn {
-      border: 2px solid #025673;
-      background-color: #025673;
-      color: #ffffff;
+
+    .navitems.active {
+      left: 0;
+      transition: all 0.5s ease;
+      z-index: 1;
+      opacity: 1;
     }
   }
 }
