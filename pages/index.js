@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import WorkExperiences from '../components/experience';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.scss';
 
@@ -104,6 +105,7 @@ export default function Home() {
                   display: 'flex',
                   flexDirection: 'row',
                   flexWrap: 'wrap',
+                  justifyContent: 'center',
                 }}
               >
                 <span style={{ color: '#ffffff', margin: 10 }}>
@@ -125,25 +127,74 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section></section>
+        <section className={styles.work}>
+          <div>
+            <h4>Where I have worked</h4>
+            <div>
+              <WorkExperiences />
+            </div>
+          </div>
+        </section>
+        {/* <section className={styles.methodogy}>
+          <div>
+            <h4>My work methodology</h4>
+            <p>Customer is alway right...yeah but customers to not always know what they want.</p>
+            <p>To bring my clients with throughout the project, here is the methodogy I use</p>
+          </div>
+          <div style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center',
+                }}>
+            <span></span>
+          </div>
+        </section> */}
+        {/* <section>
+          <div>
+            <h4>What I do</h4>
+          </div>
+          <div>
+            <div>
+              <h5>Full Stack Web Development</h5>
+            </div>
+            <div>
+              <h5></h5>
+            </div>
+          </div>
+        </section> */}
+        <section className={styles.contact}>
+          <div>
+            <div>
+              <h2>Let's get in touch</h2>
+              <p>
+                I'm open to newer opportunities and would love to connect with
+                you. Feel free to say hi 😉
+              </p>
+            </div>
+            <div className={styles.contactlinks}>
+              <a className={styles.phone} href="tel:+233576621657">
+                <i className="fas fa-phone-alt"></i>
+                <span>+233576621657</span>
+              </a>
+              <a className={styles.whatsapp} href="https://wa.me/233576621657">
+                <i className="fab fa-whatsapp"></i>
+                <span>+233576621657</span>
+              </a>
+              <a className={styles.telegram} href="https://t.me/isaacgyamfi8">
+                <i className="fab fa-telegram-plane"></i>
+                <span>+233576621657</span>
+              </a>
+              <a className={styles.email} href="mailto:frimpongi50@gmail.com">
+                <i className="fas fa-envelope"></i>
+                <span>frimpongi50@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <h3>Get in touch</h3>
-          <div>
-            <a href="mailto:frimpongi50@gmail.com">frimpongi50@gmail.com</a> |
-            <a href="tel:+233576621657"> +233576621657</a>
-          </div>
-        </div>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }

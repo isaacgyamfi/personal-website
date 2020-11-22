@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,6 +36,8 @@
         font-weight: 500;
         &:hover {
           border-bottom: 4px solid #025673;
+          color: #025673;
+          cursor: pointer;
         }
       }
     }
@@ -47,21 +49,23 @@
       button {
         padding: 10px 15px;
         margin-right: 10px;
-        border-radius: 2px;
-        font-weight: bold;
-        border-radius: 5px;
+        // border-radius: 2px;
+        font-weight: 400;
         &:hover {
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
           cursor: pointer;
         }
       }
       button.primarybtn {
-        border: 2px solid #025673;
+        border: 1px solid #025673;
         color: #025673;
         background-color: #ffffff;
+        &:hover {
+          background-color: rgba(2, 87, 115, 0.048);
+        }
       }
       button.secondarybtn {
-        border: 2px solid #025673;
+        border: 1px solid #025673;
         background-color: #025673;
         color: #ffffff;
       }

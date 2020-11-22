@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "company": "Unicorn Developers",
+      "company_logo": "/assets/images/unicorn-favion.jpg",
+      "company_url": "https://unicorndevelopers.org/",
+      "position": "Founder & Software Engineer",
+      "period": "April 2020 - Present",
+      "tasks": [
+        "Created a remote startup of 8 budding software engineers and computer scientists to nurture and develop ideas through problem-solving using software engineering.",
+        "Created free live coding sessions for tertiary students and taught basic web development with HTML, CSS, and JavaScript.",
+        "Working in Product Development and as a Full Stack Developer."
+      ],
+      "tags": ["Software Engineer", "Facilitator"]
+    },
+    {
+      "id": "2",
+      "company": "Geeklama",
+      "company_logo": "/assets/images/geeklama-logo.png",
+      "company_url": "https://geeklama.com/",
+      "position": "Lead Coding Instructor",
+      "period": "March 2020 - Present",
+      "tasks": [
+        "Taught a number of students from the age of 7 to 17 fundamental Python and Scratch and interviewed a number of candidates for acoding instructor position."
+      ],
+      "tags": ["Frontend", "Vue", "internship"]
+    },
+    {
+      "id": "3",
+      "company": "GetRooms",
+      "company_logo": "/assets/images/Get-Rooms-Logo-web-03.png",
+      "company_url": "https://getrooms.co/",
+      "position": "Frontend Developer intern",
+      "period": "January 2019 - April 2019",
+      "tasks": [
+        "Worked on the client-side user interface of the hostel management dashboard using Vue.js. The management dashboard helped hostel managers to perform tenants’ registration and payment processing."
+      ],
+      "tags": ["python", "scratch", "coding_instructor"]
+    }
+  ]
+}
