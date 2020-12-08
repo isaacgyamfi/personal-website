@@ -51,7 +51,7 @@ const Navbar = () => {
               Study with me
             </a>
             <a
-              href="/assets/files/resume.pdf"
+              href="/files/resume.pdf"
               className={`${styles.btn} ${styles.secondarybtn}`}
             >
               Download resume
