@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
   .header {
     display: flex;
     flex-direction: row;
@@ -46,7 +48,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      button {
+      .btn {
         padding: 10px 15px;
         margin-right: 10px;
         // border-radius: 2px;
@@ -56,7 +58,7 @@
           cursor: pointer;
         }
       }
-      button.primarybtn {
+      .primarybtn {
         border: 1px solid #025673;
         color: #025673;
         background-color: #ffffff;
@@ -64,7 +66,7 @@
           background-color: rgba(2, 87, 115, 0.048);
         }
       }
-      button.secondarybtn {
+      .secondarybtn {
         border: 1px solid #025673;
         background-color: #025673;
         color: #ffffff;
@@ -105,7 +107,6 @@
       padding: 10px;
       left: -100%;
       top: 70px;
-      height: 90vh;
       transition: all 0.5s ease;
       position: absolute;
       opacity: 1;
@@ -114,14 +115,14 @@
         flex-direction: column;
         padding: 0;
         li {
-          display: block;
           width: 100%;
           color: #ffffff;
-          // margin: 5px;
           padding: 10px;
           font-size: x-large;
           &:hover {
-            background-color: #025673;
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
           }
         }
       }
@@ -131,12 +132,14 @@
         align-items: center;
         justify-content: center;
 
-        button {
+        .btn {
           width: 100%;
           margin: 5px;
           font-size: large;
+          display: block;
+          text-align: center;
         }
-        button.primarybtn {
+        .primarybtn {
           border: 2px solid #ffffff;
           color: #025673;
           background-color: #ffffff;

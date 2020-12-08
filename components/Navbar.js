@@ -47,8 +47,15 @@ const Navbar = () => {
             <li>Contact</li>
           </ul>
           <div className={styles.btngroup}>
-            <button className={styles.primarybtn}>Study with me</button>
-            <button className={styles.secondarybtn}>Download resume</button>
+            <a href="#" className={`${styles.btn} ${styles.primarybtn}`}>
+              Study with me
+            </a>
+            <a
+              href="/assets/files/resume.pdf"
+              className={`${styles.btn} ${styles.secondarybtn}`}
+            >
+              Download resume
+            </a>
           </div>
         </div>
       </nav>

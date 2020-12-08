@@ -123,6 +123,9 @@ export default function Home() {
                 <span style={{ color: '#ffffff', margin: 10 }}>
                   <i className="fab fa-react"></i> React (Native)
                 </span>
+                <span style={{ color: '#ffffff', margin: 10 }}>
+                  <i className="fab fa-node-js"></i> Node.js
+                </span>
               </div>
             </div>
           </div>
