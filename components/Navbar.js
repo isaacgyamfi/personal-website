@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from '../styles/Navigation.module.scss';
 
@@ -40,12 +41,11 @@ const Navbar = () => {
               : `${styles.navitems}`
           }
         >
-          <ul>
-            <li>Meet me</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
+          <div>
+            <a href="#about">Meet me</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
           <div className={styles.btngroup}>
             <a href="#" className={`${styles.btn} ${styles.primarybtn}`}>
               Study with me

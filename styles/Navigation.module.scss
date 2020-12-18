@@ -26,10 +26,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    ul {
+    div {
       display: flex;
       padding: 0;
-      li {
+      a {
         list-style: none;
         margin: 10px 5px;
         padding: 5px;
@@ -110,11 +110,11 @@
       transition: all 0.5s ease;
       position: absolute;
       opacity: 1;
-      ul {
+      div {
         display: flex;
         flex-direction: column;
         padding: 0;
-        li {
+        a {
           width: 100%;
           color: #ffffff;
           padding: 10px;

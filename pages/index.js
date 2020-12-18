@@ -78,7 +78,7 @@ export default function Home() {
             Learn more
           </a>
         </div> */}
-        <section className={styles.about}>
+        <section id="about" className={styles.about}>
           <div>
             <h4>Meet me 👋</h4>
             <div className={styles.row}>
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.work}>
+        <section id="experience" className={styles.work}>
           <div>
             <h4>Where I have worked</h4>
             <div>
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section className={styles.contact}>
+        <section id="contact" className={styles.contact}>
           <div>
             <div>
               <h2>Let's get in touch</h2>
