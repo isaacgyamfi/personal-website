@@ -11,13 +11,7 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <div className={styles.header}>
           <div className={styles.logo}>
-            <Image
-              src="/assets/images/personal-image.jpeg"
-              width={50}
-              height={50}
-              alt="me"
-            />
-            <h4>ISAAC GYAMFI</h4>
+            <h4>i</h4>
           </div>
           <div
             style={{
@@ -28,7 +22,7 @@ const Navbar = () => {
           >
             <div onClick={handleNav}>
               <i
-                style={{ color: '#ffffff', fontSize: 28 }}
+                style={{ color: '#000000', fontSize: 28 }}
                 className={navOpen ? 'fas fa-times' : 'fas fa-bars'}
               ></i>
             </div>

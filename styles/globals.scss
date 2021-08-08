@@ -1,13 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import 'scss/fontawesome.scss';
 @import 'scss/brands.scss';
 @import 'scss/solid.scss';
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('/fonts/CrimsonText/CrimsonText-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('/fonts/CrimsonText/CrimsonText-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('/fonts/CrimsonText/CrimsonText-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('/fonts/CrimsonText/CrimsonText-SemiBoldItalic.ttf');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'CrimsonText';
 }
 
 a {
