@@ -45,7 +45,7 @@ const Navbar = () => {
               Study with me
             </a>
             <a
-              href="/files/resume.pdf"
+              href="/files/CV-ISAAC-FRIMPONG-GYAMFI.pdf"
               className={`${styles.btn} ${styles.secondarybtn}`}
             >
               Download resume
