@@ -4,13 +4,6 @@ const Experience = ({ experience }) => {
   return (
     <div className="flex flex-col transition-all duration-75 ease-in justify-center items-center">
       <div>
-        <img
-          className="w-28 h-28"
-          src={experience.company_logo}
-          alt="geeklama"
-        />
-      </div>
-      <div>
         <h4 className="text-2xl font-semibold">
           {experience.position} @{' '}
           <a href={experience.company_url}>{experience.company}</a>

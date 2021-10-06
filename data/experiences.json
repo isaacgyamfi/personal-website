@@ -24,7 +24,7 @@
       "tasks": [
         "Taught a number of students from the age of 7 to 17 fundamental Python and Scratch and interviewed a number of candidates for acoding instructor position."
       ],
-      "tags": ["Frontend", "Vue", "internship"]
+      "tags": ["python", "scratch", "coding_instructor"]
     },
     {
       "id": "3",
@@ -36,7 +36,7 @@
       "tasks": [
         "Worked on the client-side user interface of the hostel management dashboard using Vue.js. The management dashboard helped hostel managers to perform tenants’ registration and payment processing."
       ],
-      "tags": ["python", "scratch", "coding_instructor"]
+      "tags": ["Frontend", "Vue", "internship"]
     }
   ]
 }

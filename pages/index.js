@@ -75,7 +75,7 @@ export default function Home() {
         </div> */}
         <section
           id="about"
-          className="px-10 lg:px-20 py-16 lg:py-28 flex flex-col-reverse lg:flex-row lg:justify-center bg-black text-white"
+          className="px-10 lg:px-32 py-16 lg:py-28 flex flex-col-reverse lg:flex-row lg:justify-center bg-black text-white"
         >
           <div className="w-full lg:w-2/3 mt-5 lg:m-0">
             <h4 className="text-3xl lg:text-4xl font-semibold">Meet me 👋</h4>

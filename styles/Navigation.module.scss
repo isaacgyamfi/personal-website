@@ -39,8 +39,8 @@
         font-size: x-large;
         font-weight: 500;
         &:hover {
-          border-bottom: 4px solid #025673;
-          color: #025673;
+          border-bottom: 4px solid #000000;
+          color: #000000;
           cursor: pointer;
         }
       }
@@ -53,7 +53,6 @@
       .btn {
         padding: 10px 15px;
         margin-right: 10px;
-        border-radius: 2px;
         font-weight: 400;
         font-size: medium;
         &:hover {
@@ -90,7 +89,6 @@
         align-items: center;
         width: 50px;
         height: 50px;
-        // border-radius: 50px;
         background-color: bisque;
         h4 {
           font-weight: 300;
@@ -101,7 +99,7 @@
     }
     .navitems {
       flex: 1;
-      background-color: rgb(51, 71, 75);
+      background-color: #f7f7f7;
       display: flex;
       flex-direction: column;
       padding: 20px;
@@ -116,7 +114,7 @@
         padding: 0;
         a {
           width: 100%;
-          color: #ffffff;
+          color: #000000;
           font-size: 20px;
           &:hover {
             background-color: transparent;
@@ -138,7 +136,7 @@
           text-align: center;
         }
         .primarybtn {
-          border: 2px solid #ffffff;
+          border: 2px solid #000000;
           color: #025673;
           background-color: #ffffff;
         }
