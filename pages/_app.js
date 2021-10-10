@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { DefaultSeo } from 'next-seo';
 import Head from 'next/head';
+import Router from 'next/router';
 import '../styles/globals.scss';
 import * as gtag from '../lib/gtag';
 
