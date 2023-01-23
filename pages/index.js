@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>ISAAC GYAMFI</title>
         <link rel="icon" href="/assets/images/personal-image.jpeg" />
-    <!-- heatmap.com snippet -->
 <script>
   var _paq = window._paq = window._paq || [];
   (function() {
@@ -20,7 +19,6 @@ export default function Home() {
     g.async=true; g.src=u+'sttracker.js?sid=100'; s.parentNode.insertBefore(g,s);
     })();
 </script>
-<!-- End heatmap.com snippet Code -->
 
 
       </Head>
