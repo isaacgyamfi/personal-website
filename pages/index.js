@@ -10,6 +10,19 @@ export default function Home() {
       <Head>
         <title>ISAAC GYAMFI</title>
         <link rel="icon" href="/assets/images/personal-image.jpeg" />
+    <!-- heatmap.com snippet -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  (function() {
+    var u="https://staging.splittesting.com/";
+    _paq.push(['setTrackerUrl', u+'sttracker.php']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'sttracker.js?sid=100'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End heatmap.com snippet Code -->
+
+
       </Head>
       <Navbar />
       <main>
