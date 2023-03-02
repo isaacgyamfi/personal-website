@@ -44,19 +44,21 @@ export default class CustomDocument extends Document {
                   `,
                 }}
               />
-              {/* <script
+              <script
                 async
                 src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}}`}
               />
               <script
                 dangerouslySetInnerHTML={{
-                  __html: `window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date());
+                  __html: `
+                 <script> var _paq = window._paq = window._paq || []; 
+                 var heatUrl="http://devdashboard.heatmap.com/"; 
+                 var heatENV = {}; 
+                 (function() { _paq.push(['setTrackerUrl', heatUrl+'sttracker.php']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.async=true; g.src=heatUrl+'heatmap.js?sid=65'; s.parentNode.insertBefore(g,s); })(); 
+                 </script>
 
-                gtag('config', '${GOOGLE_ADS_ID}');`,
+                `,
                 }}
-              /> */}
             </Fragment>
           )}
         </Head>
